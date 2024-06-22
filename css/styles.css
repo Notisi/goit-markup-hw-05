@@ -667,12 +667,11 @@ cursor: pointer;
     .modal-close:hover {
         background-color: #404BBF;
         border: none;
-        fill: #ffffff
     }
 
     .modal-close:focus {
+        background-color: #404bbf;
         border: none;
-        fill: #ffffff
     }
 
 
@@ -740,6 +739,11 @@ height: 120px;
 .model-input:invalid {
     background-color: #5d0505;
 } */
+
+.modal-field-wraper {
+    position: relative;
+    margin-bottom: 8px;
+}
 
 .modal-field-wrap {
     position: relative;
@@ -830,6 +834,7 @@ line-height: 150%;
 letter-spacing: 0.04em;
 text-align: center;
 color: #fff;
+display: inline-flex;
 }
 
 /* .btn-send-all:disabled {
