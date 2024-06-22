@@ -671,7 +671,6 @@ cursor: pointer;
     }
 
     .modal-close:focus {
-        background-color: #404bbf;
         border: none;
         fill: #ffffff
     }
@@ -744,10 +743,12 @@ height: 120px;
 
 .modal-field-wrap {
     position: relative;
-    margin-bottom: 8px;
-
-
+    margin-bottom: 16px;
 }
+
+/* .modal-field-wrap-comment {
+    margin-bottom: 16px;
+} */
 
 
 .modal-label {
@@ -862,7 +863,7 @@ height: 16px;
 border-radius: 2px;
 border: 1px solid rgba(46, 47, 66, 0.4);
 margin-right: 12px;
-display: flex;
+display: inline-flex;
 align-items: center;
 justify-content: center;
 fill: transparent;
