@@ -114,11 +114,12 @@
     </div>
     <div class="footer-subscribe">
         <p class="footer-text-soc">Subscribe</p>
-        <form class="footer-form"></form>
+        <form class="footer-form">
         <label for="" aria-label="email"></label>
         <input type="email" id="footer-email" name="footer-email" class="footer-input" placeholder="E-mail">
         <button  type="button" class="footer-form-btn">Subscribe<svg width="24" height="24" class="footer-form-btn-svg"><use href="./images/icons.svg#icon-plain"></use></svg></button>
-</div>
+    </form>
+    </div>
     </footer>
     <div class="backdrop is-open">   
         <div class="modal">
@@ -138,7 +139,7 @@
                     <label for="user-name" class="modal-label">Phone</label>
                     <div class="div-modal-label">
                         <input type="number" name="user-phone" class="modal-input" placeholder="Enter your phone" required id="user-phone">
-                        <svg class="modal-icon" width="12" height="12" >
+                        <svg class="modal-icon" width="18" height="24" >
                             <use href="./images/icons.svg#icon-pplsvg"></use>
                         </svg>
                     </div>
@@ -147,25 +148,22 @@
                     <label for="user-name" class="modal-label">Email</label>
                     <div class="div-modal-label">
                         <input type="email" name="user-email" class="modal-input" placeholder="Enter your email" id="user-email">
-                        <svg class="modal-icon" width="12" height="12" >
+                        <svg class="modal-icon" width="18" height="24" >
                             <use href="./images/icons.svg#icon-convertsvg"></use>
                         </svg>
                     </div>
                 </div>
                 <div class="modal-field-wrap">
                     <label for="user-comment" class="modal-label">Comment</label>
-                    <textarea name="user-comment" id="" class="model-textarea" placeholder="Text input "></textarea>
+                    <textarea name="user-comment" id="user-comment" class="model-textarea" placeholder="Text input"></textarea>
                 </div>
-                <div class="modal-field-wrap">
-                <input type="checkbox" name="policy" id="policy" value="true" class="modal-check visually-hidden">
-                <label for="policy" class="modal-chec-text"><span>
+                <div class="modal-field-wrap-check">
+                <input type="checkbox" name="user-privacy" id="user-privacy" value="true" class="modal-check visually-hidden">
+                <label for="user-privacy" class="modal-chec-text"><span class="modal-chec-text-span">
                     <svg class="check-icon" width="10" height="8"><use href="./images/icons.svg#icon-done"></use></svg>
-                </span>I accept the terms and conditions of the Privacy Policy</label> 
-                <div class="button-submit">
+                </span>I accept the terms and conditions of the<a class="privacy-policy">Privacy Policy</a></label> 
                 <button type="submit" class="btn-send-all" disabled><span class="btn-send-all-text">Send</span></button>
-            
             </form> 
-        </div>
     </div> 
 </body>
 </html>

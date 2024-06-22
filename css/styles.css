@@ -636,6 +636,7 @@ color: #fff;
 
 
     .modal-close {
+        width: 24px;
         position: absolute;
         top: 24px;
         right: 24px;
@@ -729,7 +730,8 @@ height: 120px;
 
 .modal-field-wrap {
     position: relative;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
+
 }
 
 
@@ -754,7 +756,7 @@ height: 120px;
     position: absolute;
     left: 16px;
     top: 50%;
-    transform: translate(-50%);
+    transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -768,23 +770,41 @@ height: 120px;
     color: #404BBF;
     outline: transparent;
     resize: none;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    background-color: transparent;
+    padding: 8px 16px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-submit {
+.model-textarea:focus {
+    border-color: #4D5AE5;
 }
+
+
 
 
 .btn-send-all {
+    font-family: "Roboto", sans-serif;
     display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    cursor: pointer;
+    min-width: 169px;
     margin: 0 auto;
     margin-top: 24px;
     border-radius: 4px;
     padding: 16px 32px;
-    width: 169px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #4d5ae5;
-    
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .btn-send-all-text {
@@ -800,6 +820,11 @@ color: #fff;
     background-color: #8e8f99  ;
 } */
 
+.modal-field-wrap-check {
+    margin-bottom: 24px;
+}
+
+
 .modal-chec-text {
     font-weight: 400;
     font-size: 12px;
@@ -809,6 +834,12 @@ color: #fff;
     display: flex;
     align-items: center;
 }
+
+.modal-chec-text-span {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+}
+
 
 .modal-chec-text span {
 width: 16px;
@@ -827,6 +858,13 @@ fill: transparent;
     border: none;
     fill: #f4f4fd;
 }
+
+.privacy-policy {
+    color: #4d5ae5;
+    margin-left: 5px;
+}
+
+
 
 /* .check-icon {
     fill: #f4f4fd;
